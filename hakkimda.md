@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hakkımda
+permalink: /hakkimda
 ---
 
 İnternet ve yazılım dünyası ile 1995 yılında Tübitak Bilgisayar Kulübü'nde tanıştım. BASIC dili ile başlayan yazılım hayatım 1996-1998 yılları arasında ANSI-C ve Perl dilleri ile hazırladığım sunucu taraflı ve web tabanlı yazılımlarla devam etti. 1998 yılının sonunda PHP dilini keşfettim, 2006 yılında Zend Certification sınavını alarak [Zend Certified Engineer](http://www.zend.com/store/education/certification/authenticate.php?ClientCandidateID=ZEND003850&RegistrationID=216356153){:target="_blank"} oldum. 
