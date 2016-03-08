@@ -1,0 +1,28 @@
+# Dependencies
+markdown:	kramdown
+highlighter:	rouge
+
+gems:		[jekyll-paginate]
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Hidayet Doğan
+tagline:          'PHP ve buna benzer şeyler hakkında'
+description:      'PHP ve buna benzer şeyler hakkında.'
+url:              http://hi.do
+
+author:
+  name:		'Hidayet Doğan'
+  url:		http://hi.do
+  gravatar:	'd55de538259751cc08d16a0843e1c69f'
+
+paginate:	4
+excerpt_separator: <!--more-->
+
+# Custom vars
+github:		https://github.com/hdogan
+linkedin:	https://www.linkedin.com/in/hdogan
+twitter:	https://twitter.com/hdogan
+speakerdeck:	https://speakerdeck.com/u/hdogan

@@ -1,0 +1,44 @@
+---
+layout: default
+title: Ana Sayfa
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {% if post.excerpt %}
+      {{ post.excerpt }}
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        Devamı &rarr;
+      </a>
+    {% else %}
+      {{ post.content }}
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/page{{paginator.next_page}}">&larr; Önceki</a>
+  {% else %}
+    <span class="pagination-item older">&larr; Önceki</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/">Sonraki &rarr;</a>
+    {% else %}
+      <a class="pagination-item newer" href="/page{{paginator.previous_page}}">Sonraki &rarr;</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Sonraki</span>
+  {% endif %}
+</div>
